@@ -41,5 +41,6 @@ ENV PYTHONPATH "${PYTHONPATH}:/usr/bin/python3"
 
 # RUN mkdir /acp3_sil
 WORKDIR /jenkins_test
+RUN python3 fact.py
 ENTRYPOINT /bin/bash
 
