@@ -22,7 +22,7 @@ RUN apt-get update && \
   freeglut3 \
   freeglut3-dev
 
-RUN git clone https://github.com/smiroshnikov/jenkins_test.git
+RUN git clone  https://github.com/smiroshnikov/jenkins_test.git --branch master --single-branch
 
 RUN wget -N https://github.com/Kitware/CMake/releases/download/v3.19.5/cmake-3.19.5-Linux-x86_64.sh \
  -q -O /tmp/cmake-install.sh \
